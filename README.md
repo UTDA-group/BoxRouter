@@ -200,23 +200,27 @@ The BoxRouter2.0  will assign default value accordingly.
 
 You can specify your own tree topology and write it into file as following format. The BoxRouter2.0 perform the routing algorithm based on you file.
 
+```
 net[name from the input] [net ID from the input] [# of wires]
 ([x11],[y11])-(x[12],y[12])
 ([x21],[y21])-(x[22],y[22])
 ....
 ....
 !
+```
 
 for example
 
-net10122 3 6// a net with name"net10122" has netID 3 and the Steiner tree has 6 wires
-17 61 - 18 61//the 1st wire is from (17,61 to 18.61)
-23 61 - 23 62
-25 62 - 23 62
-18 61 - 21 61
-21 61 - 21 62
-23 62 - 21 62
-!
+```
+ net10122 3 6 // a net with name"net10122" has netID 3 and the Steiner tree has 6 wires
+ 17 61 - 18 61 // the 1st wire is from (17,61 to 18.61)
+ 23 61 - 23 62
+ 25 62 - 23 62
+ 18 61 - 21 61
+ 21 61 - 21 62
+ 23 62 - 21 62
+ !
+```
 ---------
 # Authors
 * Minsik Cho, Kun Yuan, Katrina Lu and David Z. Pan
